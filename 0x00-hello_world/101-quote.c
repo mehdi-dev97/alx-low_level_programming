@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - FPrintsf "and that piece of art is useful" - Dora Korpar, 2015-10-19"
+ * main - Print string in console using fprintf func.
  *
- * Return: Always 1.
+ * Return: Always 0 (Success)
  */
 
 int main(void)
