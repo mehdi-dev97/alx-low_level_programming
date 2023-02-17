@@ -1,13 +1,14 @@
-#include <stdio.h>
 #include <unistd.h>
-
 /**
- * main - Print phrase "and that piece of art is useful"
+ * main - Entry point
  *
  * Return: Always 1 (Success)
  */
 int main(void)
 {
-	fputs("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
+	char msg[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+
+	write(STDERR_FILENO, msg, sizeof(msg) - 1);
+
 	return (1);
 }
