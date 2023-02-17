@@ -3,7 +3,8 @@
 #include <time.h>
 
 /*
- * main - This function check rand number if is negative or posetive.
+ * main - entry point
+ * Description: This function check rand number if is negative or posetive.
  *
  * Return Always 0
  */
