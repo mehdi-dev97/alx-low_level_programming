@@ -1,10 +1,10 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 /**
- * main - entry point
- * Description: prints if a last number of n is gt to 5 or lt 6 or is zero.
- * Return: 0
+ * main - Entry point
+ * Description: checks on the last digit of the assigned n
+ * Return: Always 0 (success)
  */
 int main(void)
 {
@@ -13,7 +13,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	m = n % 10;
-	if (n > 5)
+	if (m > 5)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n", n, m);
 	}
