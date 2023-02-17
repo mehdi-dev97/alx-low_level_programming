@@ -4,7 +4,7 @@
 
 /*
  * Main - Entry point
- * Descritpion : This function check rand number if is negative or posetive.
+ * Description - This function check rand number if is negative or posetive.
  *
  * Return Always (0) Success
  */
@@ -22,7 +22,7 @@ int main(void)
 	{
 		printf("%d is negative\n", n);
 	}
-	else
+	else if(n == 0)
 	{
 		printf("is zero\n");
 	}
