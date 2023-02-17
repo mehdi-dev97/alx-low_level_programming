@@ -3,10 +3,9 @@
 #include <time.h>
 
 /*
- * Main - Entry point
- * Description - This function check rand number if is negative or posetive.
+ * main - This function check rand number if is negative or posetive.
  *
- * Return Always (0) Success
+ * Return Always 0
  */
 int main(void)
 {
@@ -22,9 +21,9 @@ int main(void)
 	{
 		printf("%d is negative\n", n);
 	}
-	else if(n == 0)
+	else if (n == 0)
 	{
-		printf("is zero\n");
+		printf("%d is zero\n", n);
 	}
 	return (0);
 }
