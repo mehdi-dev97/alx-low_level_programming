@@ -1,8 +1,7 @@
 #include <stdio.h>
-
 /**
- * main - Print string in console using puts func.
- *
+ * main - entry point.
+ * Description: Print string in console using puts func.
  * Return: Always 0 (Success)
  */
 int main(void)
