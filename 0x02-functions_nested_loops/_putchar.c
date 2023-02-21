@@ -1,6 +1,7 @@
 #include <stdio.h>
-/* _putchar - print char to cout.
- * Return: 0 (Success).
+/* _putchar - entry point
+ * Description: print char to cout
+ * Return: 0 (Success)
  */
 int _putchar(int ch)
 {
