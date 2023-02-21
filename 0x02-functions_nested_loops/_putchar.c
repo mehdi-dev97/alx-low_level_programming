@@ -1,10 +1,13 @@
-#include <stdio.h>
-/* _putchar - entry point
- * Description: print char to cout
- * Return: 0 (Success)
+#include <unistd.h>
+
+/**
+ * _putchar - print the character ch to cout
+ * @ch: The character to print
+ *
+ * Return: 0 Success.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-int _putchar(int ch)
+int _putchar(char ch)
 {
-	putchar(ch);
-	return (0);
+	return (write(1, &ch, 1));
 }
