@@ -1,17 +1,17 @@
-#include <string.h>
+#include "main.h"
+
 /**
- * _strlen - entry point.
- * @s: string.
- * Description: length of a string.
- * Return: length.
+ * _strlen - get the length of a string
+ * @s: string
+ *
+ * Return: int length of the string
  */
+
 int _strlen(char *s)
 {
-	int length;
+	int length = 0;
 
-	for (length = 0; length <= s[length]; length++)
-	{
+	while (s[length])
 		length++;
-	}
 	return (length);
 }
