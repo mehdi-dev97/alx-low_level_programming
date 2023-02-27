@@ -1,4 +1,5 @@
-include "main.h"
+
+#include "holberton.h"
 
 /**
  * _atoi - convert a string to an integer.
@@ -26,4 +27,3 @@ int _atoi(char *s)
 
 	return (num * sign);
 }
-
