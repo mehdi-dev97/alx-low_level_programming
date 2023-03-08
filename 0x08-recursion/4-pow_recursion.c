@@ -3,7 +3,7 @@
 /**
  * _pow_recursion - calculate value of x raised by power y
  * @x: given number
- * @: power number
+ * @y: power number
  * Return: value of power
  */
 int _pow_recursion(int x, int y)
