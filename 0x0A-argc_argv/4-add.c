@@ -15,20 +15,28 @@ int main(int argc, char *argv[])
 	int c;
 	int total = 0;
 
-	for (i = 1; i < argc; i++)
+	if (argc < 2)
 	{
-		for (c = 0; c <= argv[i][c]; c++)
-		{
-			if (isdigit(argv[i][c]) == 0)
-			{
-				printf("Error\n");
-				return (1);
-			}
-		}	
-	
-		total += atoi(argv[i]);
-
+		printf("0\n");
+		return (0);
 	}
-	printf("%d\n", total);
+	else
+	{
+		for (i = 1; i < argc; i++)
+		{
+			for (c = 0; c <= argv[i][c]; c++)
+			{
+				if (isdigit(argv[i][c]) == 0)
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
+	
+			total += atoi(argv[i]);
+
+		}
+		printf("%d\n", total);
+	}
 	return (0);
 }
