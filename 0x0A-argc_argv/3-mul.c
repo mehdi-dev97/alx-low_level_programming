@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int total = 0;
+	int total = 1;
 
 	if (argc == 1 || argc == 2)
 	{
@@ -20,14 +20,7 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		if (i == 1)
-		{
-			total = atoi(argv[i]);
-		}
-		else
-		{
-			total *= atoi(argv[i]);
-		}
+		total *= atoi(argv[i]);
 	}
 	printf("%d", total);
 	return (0);
